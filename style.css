@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  /* 캘린더 스타일 */
+  #calendar {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  #calendar-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  #calendar-days,
+  #calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  #calendar-days div {
+    font-weight: bold;
+    padding: 8px 0;
+    background-color: #f0f0f0;
+  }
+  
+  #calendar-dates div {
+    border: 1px solid #eee;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  /* 캘린더 칸 안에 이미지가 들어갈 때 크기 조절 */
+#calendar-dates div img.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+
+
+/* 모달 기본 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* 모달 내용 */
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* 이미지 스타일 옵션 */
+.thumbnail.cover {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  
+.thumbnail.contain {
+    width: 100%; height: 100%; object-fit: contain;
+  }
+  
+.thumbnail.small {
+    width: 50px; height: 50px; object-fit: contain;
+  }
+    

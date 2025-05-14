@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나만의 웹 페이지</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>안녕하세요, 나만의 웹 페이지!</h1>
+  </header>
+
+<!-- 이미지 편집 모달 -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <h3>이미지 추가</h3>
+      <input type="file" id="imageInput" accept="image/*"><br><br>
+  
+      <label>크기 선택:</label><br>
+      <select id="imageSizeSelect">
+        <option value="cover">꽉 채우기</option>
+        <option value="contain">맞춤 비율</option>
+        <option value="small">작게</option>
+      </select><br><br>
+  
+      <button id="applyImageBtn">적용</button>
+      <button id="cancelImageBtn">취소</button>
+    </div>
+  </div>
+  
+  <main>
+    <!-- 월간 캘린더 추가 -->
+    <section>
+      <h2>📅 월간 캘린더</h2>
+      <div id="calendar">
+        <div id="calendar-header"></div>
+        <div id="calendar-days"></div>
+        <div id="calendar-dates"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 나만의 웹 페이지</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
